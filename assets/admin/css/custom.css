@@ -1,0 +1,26 @@
+#example thead th {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: initial;
+}
+
+#example tbody tr td {
+    font-size: 14px;
+}
+
+.progress {
+    display: none;
+}
+
+.btn-file {
+    background-color: #0042a5;
+    border: #0042a5 1px solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;    
+}
+
+.color-red {
+    color: #ff0000;
+}
