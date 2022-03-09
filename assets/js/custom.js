@@ -68,60 +68,6 @@
         fixedContentPos: false
     });
 
-    /************************
-     *  FORM REGISTER USER 
-     ************************/
-    $('#frm-link').validate({
-        errorElement: 'span',
-        errorPlacement: function(error, element) {
-            error.addClass('invalid-feedback');
-            element.closest('.form-group').append(error);
-        },
-        highlight: function(element, errorClass, validClass) {
-            $(element).addClass('is-invalid');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            $(element).removeClass('is-invalid');
-        },
-        submitHandler: function(form) {
-            $.ajax({
-                url: BASE_URL + 'login/check_login',
-                type: 'GET',
-                data: $('#frm-link').serialize(),
-                contentType: false,
-                processData: false,
-                //async: false, //blocks window close
-                beforeSend: function(data) {
-                    //console.log(data);
-                    $('.msg').fadeIn('slow', function() {
-                        $('.msg').text("ENVIANDO...");
-                    });
-                },
-                success: function(data) {
-                    //console.log(data);
-                    if (data === 'TRUE') {
-                        $('#frm-login-user').fadeOut('slow');
-                        msg("Dados enviados com sucesso!", "success");
-                        setTimeout(() => {
-                            $(location).attr('href', '');
-                        }, 2000);
-                    } else if (data === 'FALSE') {
-                        msg("Dados não enviados!", "warning");
-                    }
-                },
-                error: function(data) {
-                    //console.log(data);
-                    $('.msg').fadeIn('slow', function() {
-                        $(this).text("Erro crítico! Por favor, contate o administrador do sistema.");
-                    });
-                    /* setTimeout(() => {
-                        $('.msg').fadeOut('slow');
-                    }, 2000); */
-                }
-            });
-        }
-    });
-
     /**
      *  FORM Buy Plan
      */
@@ -169,6 +115,55 @@
                 error: function(data) {
                     //console.log(data);
                     //$.unblockUI();
+                    msg("Erro crítico! Por favor, consulte o administrador do sistema!", "error");
+                    setTimeout(() => {
+                        $('.msg').fadeOut('slow');
+                    }, 2000);
+                }
+            });
+        }
+    });
+
+    /************************
+     *  FORM LINK DEDICADO
+     ************************/
+    $('#frm-dedicate-link').validate({
+        errorElement: 'span',
+        errorPlacement: function(error, element) {
+            error.addClass('invalid-feedback');
+            element.closest('.form-group').append(error);
+        },
+        highlight: function(element, errorClass, validClass) {
+            $(element).addClass('is-invalid');
+        },
+        unhighlight: function(element, errorClass, validClass) {
+            $(element).removeClass('is-invalid');
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                url: BASE_URL + 'assineagora/send_buy_dedicate_link',
+                type: 'GET',
+                data: $('#frm-dedicate-link').serialize(),
+                contentType: false,
+                processData: false,
+                //async: false, //blocks window close
+                beforeSend: function(data) {
+                    //console.log(data);
+                    msg("<b>Processando... Por favor, aguarde!<b>", 'alert');
+                },
+                success: function(data) {
+                    //console.log(data);
+                    if (data === 'TRUE') {
+                        msg("Recebemos o seu pedido! <br><br> Entraremos em contato nas próximas 24h via telefone para gerarmos o seu orçamento.", "success");
+                        setTimeout(() => {
+                            $(location).attr('href', '');
+                        }, 10000);
+                    } else if (data === 'FALSE') {
+                        msg("Dados não enviados!", "error");
+                    }
+                },
+                error: function(data) {
+                    //console.log(data);
                     msg("Erro crítico! Por favor, consulte o administrador do sistema!", "error");
                     setTimeout(() => {
                         $('.msg').fadeOut('slow');

@@ -31,7 +31,7 @@ class Ajx extends CI_Controller {
         <?php
             foreach ($cities as $value) :
         ?>
-            <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+            <option value="<?php echo $value->nome; ?>"><?php echo $value->nome; ?></option>
         <?php                    
             endforeach;
         endif;

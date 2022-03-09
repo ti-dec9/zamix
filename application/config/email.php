@@ -5,10 +5,10 @@ defined('BASEPATH') OR exit('No direct script access allowed.');
 $config['useragent']        = 'CodeIgniter';             // Mail engine switcher: 'CodeIgniter' or 'PHPMailer'
 $config['protocol']         = 'smtp';                   // 'mail', 'sendmail', or 'smtp'
 $config['mailpath']         = '/usr/sbin/sendmail';
-$config['smtp_host']        = 'smtp.gmail.com';
+$config['smtp_host']        = 'mail.zamix.com.br';
 $config['smtp_auth']        = false;                     // Whether to use SMTP authentication, boolean TRUE/FALSE. If this option is omited or if it is NULL, then SMTP authentication is used when both $config['smtp_user'] and $config['smtp_pass'] are non-empty strings.
-$config['smtp_user']        = 'xploter13@gmail.com';
-$config['smtp_pass']        = 'a1b2c309*';
+$config['smtp_user']        = 'mailto@zamix.com.br';
+$config['smtp_pass']        = 'Mudar@1234';
 $config['smtp_port']        = 465;
 $config['smtp_timeout']     = 30;                       // (in seconds)
 $config['smtp_crypto']      = 'ssl';                    // '' or 'tls' or 'ssl'

@@ -154,11 +154,14 @@
                         <div class="col-lg-12">
                             <p>Preencha o formulário abaixo para solicitar uma cotação.</p>
                         </div>
+                        <div class="col-lg-12 mt-1 mb-1">
+                            <div class="msg"></div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="modal-body">
-                    <form class="form-area" id="frm-link">
+                    <form class="form-area" id="frm-dedicate-link">
                         <div class="container">
                             <div class="row">                                
                                 <div class="col-lg-12">
@@ -203,32 +206,12 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <select name="state" class="form-control" style="width: 100%;" id="cmb-state" required>
-                                            <?php 
-                                                if (!empty($states)) :
-                                            ?>
-                                                <option value="" selected disabled>Estado</option>
-                                            <?php
-                                                foreach ($states as $obj) :
-                                            ?>
-                                                <option value="<?php echo $obj->id ?>"><?php echo $obj->nome; ?></option>
-                                            <?php
-                                                endforeach;
-                                            else :
-                                            ?>
-                                                <option value="" selected disabled>Nenhum registro encontrado</option>
-                                            <?php
-                                            endif;
-                                            ?>
-                                        </select>
+                                        <input type="text" name="state" class="form-control" placeholder="Estado" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
-                                    <div class="loading-city"></div>
                                     <div class="form-group">
-                                        <select name="city" class="form-control" style="width: 100%;" id="cmb-city" required>
-                                            <option value="" selected disabled>Cidade</option>
-                                        </select>
+                                        <input type="text" name="city" class="form-control" placeholder="Cidade" required>
                                     </div>                            
                                 </div>
                                 <div class="col-lg-12">

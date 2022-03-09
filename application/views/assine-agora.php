@@ -100,7 +100,7 @@
                                             <?php
                                                 foreach ($states as $obj) :
                                             ?>
-                                                <option value="<?php echo $obj->id ?>"><?php echo $obj->nome; ?></option>
+                                                <option value="<?php echo $obj->id; ?>"><?php echo $obj->nome; ?></option>
                                             <?php
                                                 endforeach;
                                             else :

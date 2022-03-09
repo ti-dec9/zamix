@@ -25,6 +25,10 @@ class Assineagora extends CI_Controller {
         $this->load->view('assine-agora', $data);
     }
 
+    /*
+    * ASSINATURA PLANOS RESIDENCIAIS E EMPRESARIAIS
+    */
+
     public function send_buy_plan() {
         $internet_id = $this->input->get("plan");
         $token = $this->input->get('_token');
@@ -93,8 +97,85 @@ class Assineagora extends CI_Controller {
     * ASSINATURA LINK DEDICADO
     */
     public function send_buy_dedicate_link() {
-        $this->name_dedicate_link = $this->input->get();
+        $name = $this->input->get('name');
+        $email = $this->input->get('email');
+        $cnpj = $this->input->get('cnpj');
+        $phone = $this->input->get('phone');
+        $cep = $this->input->get('cep');
+        $street = $this->input->get('street');
+        $number = $this->input->get('number');
+        $neighborhood = $this->input->get('neighborhood');
+        $state = $this->input->get('state');
+        $city = $this->input->get('city');
 
+        // insira uma conta de e-mail valida em sua hospedagem
+        //$from = "xploter13@gmail.com";
+        $from = "empresarial@sodobrasil.net.br";
+
+        // O remetente deve ser um e-mail do seu domínio conforme determina a RFC 822.
+        $sender = $from;
+
+        // cabeçalho do email
+        $headers = "Content-Type: text/html; charset=UTF-8\n";
+        $headers .= "From: " . $sender . "\n";
+        $headers .= "Reply-To: " . $from . "\n";
+
+        // Mensagem no corpo do email
+        $body = "<style type='text/css'>
+                        body {
+                            margin: 0px;
+                            font-family: Arial;
+                            font-size: 16px;
+                            color: #666666;
+                        }
+                    </style>
+                    <html>
+                        <p>Você tem uma nova solicitação de cotação para Link Dedicado. Segue os dados abaixo!!!</p> <br>
+                        <table width='510' border='1' cellpadding='1' cellspacing='1'>
+                            <tr>
+                                <td>
+                                    <tr>
+                                        <td width='600'><b>Nome:</b> $name</td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Email:</b> $email</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Telefone:</b> $cnpj</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Telefone:</b> $phone</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Cep:</b> $cep</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Rua:</b> $street</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Número:</b> $number</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Bairro:</b> $neighborhood</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Estado:</b> $state</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td width='320'><b>Cidade:</b> $city</b></td>
+                                    </tr>
+                                </td>
+                            </tr>
+                        </table>
+                    </html>";
+
+        $subject = 'Link Dedicado | Solicitação de Cotação';
+
+        if(mail($from, $subject, $body, $headers)) {
+            echo "TRUE";
+        } else {
+            echo "FALSE";
+        }
     }
 
 }
