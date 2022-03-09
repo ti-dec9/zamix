@@ -118,7 +118,7 @@ class Assineagora extends CI_Controller {
         // cabeçalho do email
         $headers = "Content-Type: text/html; charset=UTF-8\n";
         $headers .= "From: " . $sender . "\n";
-        $headers .= "Reply-To: " . $from . "\n";
+        //$headers .= "Reply-To: " . $from . "\n";
 
         // Mensagem no corpo do email
         $body = "<style type='text/css'>
