@@ -113,7 +113,7 @@ class Model_Planos extends CI_Model {
         if ($err) {
             echo "cURL Error #:" . $err;
         } else {
-            print_r(json_decode($response));
+            return json_decode($response);
         }
     }    
 

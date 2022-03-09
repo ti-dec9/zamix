@@ -77,5 +77,28 @@ class General {
         }
 
     }
-   
+
+    public function emptyCPF_CNPJ($valor) {
+        $valor = trim($valor);
+        $valor = str_replace(".", "", $valor);
+        $valor = str_replace(",", "", $valor);
+        $valor = str_replace("-", "", $valor);
+        $valor = str_replace("/", "", $valor);
+        return $valor;
+    }
+
+    public function emptyPhone($valor) {
+        $valor = trim($valor);
+        $valor = str_replace(" ", "", $valor);
+        $valor = str_replace("(", "", $valor);
+        $valor = str_replace(")", "", $valor);
+        $valor = str_replace("-", "", $valor);
+        return $valor;
+    }
+
+    public function emptyCep($valor) {
+        $valor = trim($valor);
+        $valor = str_replace("-", "", $valor);
+        return $valor;
+    }
 }

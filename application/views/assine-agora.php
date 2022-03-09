@@ -26,12 +26,9 @@
     </section>
 
     <div class="container">
-        <div class="col-lg-8 pt--80">
+        <div class="col-lg-8 pt--80 pb-5">
             <h5 class="text-uppercase text-bold color-black">Você está a poucos passos de aproveitar a nossa conexão. Preencha seus dados e clique em contratar!</h5>
-        </div>
-        <div class="col-lg-12 mt-4 mb-5">
-            <div class="msg"></div>
-        </div>
+        </div>        
     </div>
     <div class="container pb--80">
         <div class="row">
@@ -43,6 +40,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <input type="text" name="voucher" class="form-control" placeholder="Voucher">
+                                        <input type="hidden" name="plan" value="<?php echo $_GET['plano']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -198,6 +196,9 @@
                     </div>
                 </div>
             </form>
+            <div class="col-lg-12 mt-4 mb-5">
+                <div class="msg"></div>
+            </div>
         </div>
     </div>
 

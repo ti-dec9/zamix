@@ -26,14 +26,15 @@ class Assineagora extends CI_Controller {
     }
 
     public function send_buy_plan() {
+        $internet_id = $this->input->get("plan");
         $token = $this->input->get('_token');
         $voucher =  $this->input->get("voucher");
         $name = $this->input->get("name");
         $birth = $this->input->get("birth-date");
         $email = $this->input->get("email");
-        $phone = $this->input->get("phone");
-        $cpf_cnpj = $this->input->get("cpf-cnpj");
-        $cep = $this->input->get("cep");
+        $phone = $this->general->emptyPhone($this->input->get("phone"));
+        $cpf_cnpj = $this->general->emptyCPF_CNPJ($this->input->get("cpf-cnpj"));
+        $cep = $this->general->emptyCep($this->input->get("cep"));
         $street = $this->input->get("street");
         $address_number = $this->input->get("address-number");
         $neighborhood = $this->input->get("neighborhood");
@@ -42,34 +43,36 @@ class Assineagora extends CI_Controller {
         $reference = $this->input->get("reference");
         $why = $this->input->get("why");
         $identify = $this->input->get("identify");
-
         $arrData = array(            
             "nome" => "$name",
             "data_nasc" => "$birth",
             "email" => "$email",
-            "telefone" => "24988262563",
-            "cpfcnpj" => "00285100700",
-            "internet_id" => "UltraMix100",
-            "cep" => "27263060",
+            "telefone" => "$phone",
+            "cpfcnpj" => "$cpf_cnpj",
+            "internet_id" => $internet_id,
+            "cep" => "$cep",
             "logradouro" => "$street",
             "numero" => "$address_number",
             "bairro" => "$neighborhood",
             "estado_sigla" => "$state",
             "cidade_nome" => "$city",
             "ponto_referencia" => "$reference",
-            "voucher" => "",
+            "voucher" => "$voucher",
             "origem_id" => "1",
             "src_table_name" => "canais_atendimento",
             "src_table_id" => "5",                      
         );
-
+        /* echo "<pre>";
+        print_r($arrData);
+        echo "</pre>"; */
         $return = $this->Model_Planos->send($arrData);
-        if ($return) {
-            echo "TRUE";
-        } else {
-            echo "FALSE";
-        }
-
+        /*
+        * retorna o status
+        ? é possível retornar mais mensagens também, através do message 
+        ! para retornar mais parâmetros, entre em contato com o time de TI da ZAMIX e pergunte pela documentação
+        */
+        echo $return->status;
+        
         //Google Recaptcha
        /* $SecretKey = "6LfBbfUdAAAAAN6s6tvH6ScH3WcfL_glGW96Ks-A";
         //Pego a validação do Captcha feita pelo usuário
@@ -84,6 +87,14 @@ class Assineagora extends CI_Controller {
         if ($response_captcha->success) {
             
         }*/
+    }
+
+    /*
+    * ASSINATURA LINK DEDICADO
+    */
+    public function send_buy_dedicate_link() {
+        $this->name_dedicate_link = $this->input->get();
+
     }
 
 }

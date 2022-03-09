@@ -1,6 +1,6 @@
 (function($) {
-    //BASE_URL = window.location.origin + '/';
-    BASE_URL = window.location.origin + '/zamix/';
+    BASE_URL = window.location.origin + '/';
+    //BASE_URL = window.location.origin + '/zamix/';
 
     // Navbar Fixed  
     $('.logo-menu').attr("src", BASE_URL + "assets/img/logo.png");
@@ -147,38 +147,29 @@
                 //async: false, //blocks window close
                 beforeSend: function(data) {
                     //console.log(data);
-                    //$('.modal-plan').modal('hide');
-                    /* $.blockUI({
-                        message: '<h3>processando...</h3>',
-                        css: {
-                            border: 'none',
-                            padding: '15px',
-                            backgroundColor: '#000',
-                            '-webkit-border-radius': '10px',
-                            '-moz-border-radius': '10px',
-                            opacity: .5,
-                            color: '#fff'
-                        }
-                    }); */
+                    msg("<b>Processando... Por favor, aguarde!<b>", 'alert');
                 },
-                success: function(data) {
-                    console.log(data);
-                    if (data === 'TRUE') {
-                        msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
-                        /* $.unblockUI();
-                        swal("", "Registros cadastrados com sucesso!", "success"); */
+                success: function(response) {
+                    //console.log(response);
+                    if (response === '200') {
+                        msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
+                        //$.unblockUI();
+                        //swal("", "Registros cadastrados com sucesso!", "success");
                         setTimeout(() => {
                             $(location).attr('href', '');
                         }, 10000);
-                    } else if (data === 'FALSE') {
-                        $.unblockUI();
-                        swal("", "Erro ao cadastrar!", "warning");
+                    } else if (response === '201') {
+                        //$.unblockUI();
+                        msg("<b>Venda já cadastrada!</b>", "error");
+                    } else if (data === '') {
+                        //$.unblockUI();
+                        msg("<b>Erro ao cadastrar!<b>", "error");
                     }
                 },
                 error: function(data) {
-                    console.log(data);
-                    $.unblockUI();
-                    swal("Atenção", "Erro crítico! Por favor, consulte o administrador do sistema!", "warning");
+                    //console.log(data);
+                    //$.unblockUI();
+                    msg("Erro crítico! Por favor, consulte o administrador do sistema!", "error");
                     setTimeout(() => {
                         $('.msg').fadeOut('slow');
                     }, 2000);

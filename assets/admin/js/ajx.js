@@ -1,7 +1,7 @@
 $(function() {
 
-    //BASE_URL = window.location.origin + '/';
-    BASE_URL = window.location.origin + '/zamix/admin/';
+    BASE_URL = window.location.origin + '/admin/';
+    //BASE_URL = window.location.origin + '/homologacao/zamix-2-14/admin/';
 
     /**********************************
      * FORM LOGIN

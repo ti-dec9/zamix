@@ -26,7 +26,7 @@ class Model_Link_Dedicado extends CI_Model {
     }
 
     /*
-     * Seleciona a noticia pelo ID
+     *
      * @param: $id
      */
     public function find($id) {
