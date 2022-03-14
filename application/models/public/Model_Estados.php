@@ -26,8 +26,8 @@ class Model_Estados extends CI_Model {
     }
 
     /*
-     * Seleciona a noticia pelo ID
-     * @param: $id = ID do Médico
+     * Seleciona e estado pelo ID
+     * @param: $id = ID
      */
     public function find_id($id) {
         $this->db->select('*')->from("$this->table")->where('id', $id);

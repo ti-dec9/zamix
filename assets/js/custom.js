@@ -1,6 +1,6 @@
 (function($) {
-    BASE_URL = window.location.origin + '/';
-    //BASE_URL = window.location.origin + '/zamix/';
+    //BASE_URL = window.location.origin + '/';
+    BASE_URL = window.location.origin + '/zamix/';
 
     // Navbar Fixed  
     $('.logo-menu').attr("src", BASE_URL + "assets/img/logo.png");

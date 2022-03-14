@@ -42,7 +42,10 @@ class Assineagora extends CI_Controller {
         $street = $this->input->get("street");
         $address_number = $this->input->get("address-number");
         $neighborhood = $this->input->get("neighborhood");
-        $state = $this->input->get("state");
+        $state = $this->Model_Estados->find_id($this->input->get('state'));
+        foreach ($state as $value) {
+            $state = $value->nome;
+        }
         $city = $this->input->get("city");
         $reference = $this->input->get("reference");
         $why = $this->input->get("why");
@@ -105,8 +108,12 @@ class Assineagora extends CI_Controller {
         $street = $this->input->get('street');
         $number = $this->input->get('number');
         $neighborhood = $this->input->get('neighborhood');
-        $state = $this->input->get('state');
+        $state = $this->Model_Estados->find_id($this->input->get('state'));
+        foreach ($state as $value) {
+            $state = $value->nome;
+        }
         $city = $this->input->get('city');
+            
 
         // insira uma conta de e-mail valida em sua hospedagem
         //$from = "xploter13@gmail.com";
@@ -118,7 +125,7 @@ class Assineagora extends CI_Controller {
         // cabeçalho do email
         $headers = "Content-Type: text/html; charset=UTF-8\n";
         $headers .= "From: " . $sender . "\n";
-        //$headers .= "Reply-To: " . $from . "\n";
+        $headers .= "Reply-To: " . $email . "\n";
 
         // Mensagem no corpo do email
         $body = "<style type='text/css'>

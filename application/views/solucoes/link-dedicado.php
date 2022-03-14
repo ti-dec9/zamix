@@ -206,12 +206,32 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" name="state" class="form-control" placeholder="Estado" required>
+                                        <select name="state" class="form-control" style="width: 100%;" id="cmb-state" required>
+                                            <?php 
+                                                if (!empty($states)) :
+                                            ?>
+                                                <option value="" selected disabled>Estado</option>
+                                            <?php
+                                                foreach ($states as $obj) :
+                                            ?>
+                                                <option value="<?php echo $obj->id; ?>"><?php echo $obj->nome; ?></option>
+                                            <?php
+                                                endforeach;
+                                            else :
+                                            ?>
+                                                <option value="" selected disabled>Nenhum registro encontrado</option>
+                                            <?php
+                                            endif;
+                                            ?>
+                                        </select>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
+                                    <div class="loading-city"></div>   
                                     <div class="form-group">
-                                        <input type="text" name="city" class="form-control" placeholder="Cidade" required>
+                                        <select name="city" class="form-control" style="width: 100%;" id="cmb-city" required>
+                                            <option value="" selected disabled>Cidade</option>
+                                        </select>
                                     </div>                            
                                 </div>
                                 <div class="col-lg-12">
