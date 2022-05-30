@@ -185,4 +185,17 @@ class Assineagora extends CI_Controller {
         }
     }
 
+    /* Resultado */
+    public function resultado() {
+        $status = $this->input->get('status');
+        /* if ($status === 'OK') {
+            $data['message'] = "Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.";    
+        } elseif ($status === 'venda-ja-cadastrada') {
+            $data['message'] = "<b>Venda já cadastrada!</b>";
+        } else {
+            $data['message'] = "<b>Erro ao cadastrar!<b>";
+        } */
+        $this->load->view('resultado-contratacao-plano');
+    }
+
 }

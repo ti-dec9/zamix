@@ -30,6 +30,7 @@
             <h5 class="text-uppercase text-bold color-black">Você está a poucos passos de aproveitar a nossa conexão. Preencha seus dados e clique em contratar!</h5>
         </div>        
     </div>
+    
     <div class="container pb--80">
         <div class="row">
             <form class="form-area" id="frm-buy-plan">

@@ -58,6 +58,7 @@ $route['teste-de-velocidade'] = 'testevelocidade';
 $route['solucoes/link-dedicado'] = 'solucoes/link_dedicado';
 $route['planos-detalhes'] = 'planosdetalhes';
 $route['assine-agora'] = 'assineagora';
+$route['assine-agora/resultado'] = 'assineagora/resultado';
 $route['blog/p/(:num)'] = 'blog';
 $route['blog/p'] = 'blog';
 $route['admin'] = 'admin/login';

@@ -1,6 +1,6 @@
 (function($) {
-    //BASE_URL = window.location.origin + '/';
-    BASE_URL = window.location.origin + '/zamix/';
+    BASE_URL = window.location.origin + '/';
+    //BASE_URL = window.location.origin + '/zamix/';
 
     // Navbar Fixed  
     $('.logo-menu').attr("src", BASE_URL + "assets/img/logo.png");
@@ -98,15 +98,17 @@
                 success: function(response) {
                     //console.log(response);
                     if (response === '200') {
-                        msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
+                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=ok');
+                        /* msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
                         //$.unblockUI();
                         //swal("", "Registros cadastrados com sucesso!", "success");
                         setTimeout(() => {
                             $(location).attr('href', '');
-                        }, 10000);
+                        }, 10000); */
                     } else if (response === '201') {
                         //$.unblockUI();
-                        msg("<b>Venda já cadastrada!</b>", "error");
+                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=venda-ja-cadastrada');
+                        //msg("<b>Venda já cadastrada!</b>", "error");
                     } else if (data === '') {
                         //$.unblockUI();
                         msg("<b>Erro ao cadastrar!<b>", "error");
