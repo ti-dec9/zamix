@@ -28,7 +28,8 @@
     <div class="container" style="min-height: 500px;">
         <div class="row">
             <div class="col-lg-12 pt--80 pb-5">
-                <div class="msg"></div>
+                <div class="msg text-center"></div> <br><br>
+                <p class="text-center"><a href="<?php echo base_url(); ?>" class="btn btn-orange hvr-grow btn-action">Ir para página principal</a></p>
             </div>       
         </div> 
     </div>
@@ -40,15 +41,9 @@
     <!-- JavaScript -->
     <?php $this->load->view('templates/scripts') ?>
     <script>
-        var message;
-        var url = "<?php echo $this->input->get('status'); ?>";
-        if (url === 'ok') {
-            msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
-        } else if (url === 'venda-ja-cadastrada') {
-            msg("<b>Venda já cadastrada!</b>", "error");
-        } else {
-            msg("<b>Erro!<b>", "error");
-        }
+        msg("<?php echo $message; ?>", "<?php echo $status_message; ?>");
+        $(".btn-action").attr('href', "<?php echo $btn_link; ?>");
+        $(".btn-action").text("<?php echo $label_link; ?>");
         //console.log(url);
 
         /**

@@ -156,10 +156,11 @@
                 success: function(data) {
                     //console.log(data);
                     if (data === 'TRUE') {
-                        msg("Recebemos o seu pedido! <br><br> Entraremos em contato nas próximas 24h via telefone para gerarmos o seu orçamento.", "success");
+                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=link-dedicado-ok');
+                        /* msg("Recebemos o seu pedido! <br><br> Entraremos em contato nas próximas 24h via telefone para gerarmos o seu orçamento.", "success");
                         setTimeout(() => {
                             $(location).attr('href', '');
-                        }, 10000);
+                        }, 10000); */
                     } else if (data === 'FALSE') {
                         msg("Dados não enviados!", "error");
                     }
