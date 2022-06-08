@@ -191,25 +191,25 @@ class Assineagora extends CI_Controller {
         $status = $this->input->get('status');
         $previous_link = '';
         if ($status === 'ok') {
-            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.";    
+            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> *Verifique com o consultor a existência de pro-rata com o valor dos dias utilizados.";    
             $data['status_message'] = 'success';    
             $data['btn_link'] = base_url();        
-            $data['label_link'] = 'Ir para página principal';        
+            $data['label_link'] = 'Ir para a página principal';        
         } elseif ($status === 'link-dedicado-ok') {
-            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Entraremos em contato nas próximas 24h via telefone para gerarmos o seu orçamento.";
+            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Vamos entrar em contato com você por telefone nas próximas 24 horas para finalizarmos a sua solicitação. Até breve!";
             $data['status_message'] = 'success'; 
             $data['btn_link'] = base_url();        
-            $data['label_link'] = 'Ir para página principal';    
+            $data['label_link'] = 'Ir para a página principal';    
         } else {
             $hours = date('h:i:s');
             if (($hours > '8:30:00') && ($hours < '18:00:00')) {
-                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat. Estamos online e prontos para te atender 😊";
+                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat <i class='fi fi-rr-comments color-orange'></i>. Estamos online e prontos para te atender 😊";
             } else {
-                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat. Responderemos a sua solicitação assim que <br> começarmos nossas atividades no próximo dia útil. 😊 <br><br> Você também pode nos contatar pelo nosso atendimento 24h pelo telefone: <b>(24)3345-0002 </b>";
+                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat <i class='fi fi-rr-comments color-orange'></i>. Responderemos a sua solicitação assim que <br> começarmos nossas atividades no próximo dia útil. 😊 <br><br> Você também pode nos contatar pelo nosso atendimento 24h pelo telefone: <b>(24)3345-0002 </b>";
             }            
             $data['status_message'] = "error";
             $data['btn_link'] = $previous_link;        
-            $data['label_link'] = 'Tentar Novamente';
+            $data['label_link'] = 'Tentar novamente';
         }
         $this->load->view('resultado-contratacao-plano', $data);
     }
