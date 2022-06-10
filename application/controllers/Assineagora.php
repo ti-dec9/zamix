@@ -203,9 +203,9 @@ class Assineagora extends CI_Controller {
         } else {
             $hours = date('h:i:s');
             if (($hours > '8:30:00') && ($hours < '18:00:00')) {
-                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat <i class='fi fi-rr-comments color-orange'></i>. Estamos online e prontos para te atender 😊";
+                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat  (o ícone laranja com um balão de fala feliz). <br> Estamos online e prontos para te atender 😊";
             } else {
-                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat <i class='fi fi-rr-comments color-orange'></i>. Responderemos a sua solicitação assim que <br> começarmos nossas atividades no próximo dia útil. 😊 <br><br> Você também pode nos contatar pelo nosso atendimento 24h pelo telefone: <b>(24)3345-0002 </b>";
+                $data['message'] = "Não foi possível enviar a sua solicitação. Por favor, tente novamente. <br><br> Se preferir, entre em contato com a gente pelo chat  (o ícone laranja com um balão de fala feliz). <br> Responderemos a sua solicitação assim que começarmos nossas atividades no próximo dia útil. 😊 <br><br> Você também pode nos contatar pelo nosso atendimento 24h pelo telefone: <b>(24)3345-0002 </b>";
             }            
             $data['status_message'] = "error";
             $data['btn_link'] = $previous_link;        
