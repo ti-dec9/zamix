@@ -14,6 +14,13 @@
     <title><?php echo $value->title; ?></title>
 </head>
 
+<!--FIX IMG MOBILE-->
+<style>
+.card-body img{
+    width:100% !important;
+}
+</style>
+
 <body>
 
     <!-- HEADER -->

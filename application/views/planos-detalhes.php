@@ -239,7 +239,7 @@
                         <li><i class="fi fi-rr-circle f-s-12"></i> Para os casos de profissional liberal, será necessário assinar duas vezes.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os equipamentos instalados no cliente são propriedade e uso exclusivo da Zamix que ao final do contrato serão recolhidos.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas por meio eletrônico.</li>
-                        <li><i class="fi fi-rr-circle f-s-12"></i> No primeiro mês o valor da mensalidade é feito com base nos dias corridos até o fim do mesmo; pro rata de no mínimo dez dias. O pagamento feito até o vencimento do mês após instalação será de R$ 79,90. A partir do terceiro mês, os valores serão cobrados conforme o plano escolhido pelo cliente assinalado nesta tabela.</li>
+                        <li><i class="fi fi-rr-circle f-s-12"></i> No primeiro mês o valor da mensalidade é feito com base nos dias corridos até o fim do mesmo; pro rata de no mínimo dez dias. O pagamento feito até o vencimento do mês após instalação será de R$ 79,90, até a data de vencimento. Logo após, será cobrado o valor integral do plano, com juros e multa. A partir do terceiro mês, os valores serão cobrados conforme o plano escolhido pelo cliente assinalado nesta tabela.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> A franquia de dados contratada estará liberada por prazo indeterminado.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os planos estão sujeitos a viabilidade técnica.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Aluguel de Roteador Wi-Fi AC adicional: R$ 14,90/Mês.</li>
@@ -348,7 +348,7 @@
                         <li><i class="fi fi-rr-circle f-s-12"></i> Para os casos de profissional liberal, será necessário assinar duas vezes.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os equipamentos instalados no cliente são propriedade e uso exclusivo da Zamix que ao final do contrato serão recolhidos.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas por meio eletrônico.</li>
-                        <li><i class="fi fi-rr-circle f-s-12"></i> No primeiro mês o valor da mensalidade é feito com base nos dias corridos até o fim do mesmo; pro rata de no mínimo dez dias. O pagamento feito até o vencimento do mês após instalação será de R$ 79,90. A partir do terceiro mês, os valores serão cobrados conforme o plano escolhido pelo cliente assinalado nesta tabela.</li>
+                        <li><i class="fi fi-rr-circle f-s-12"></i> No primeiro mês o valor da mensalidade é feito com base nos dias corridos até o fim do mesmo; pro rata de no mínimo dez dias. O pagamento feito até o vencimento do mês após instalação será de R$ 79,90, até a data de vencimento. Logo após, será cobrado o valor integral do plano, com juros e multa. A partir do terceiro mês, os valores serão cobrados conforme o plano escolhido pelo cliente assinalado nesta tabela.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> A franquia de dados contratada estará liberada por prazo indeterminado.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os planos estão sujeitos a viabilidade técnica.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Aluguel de Roteador Wi-Fi AC adicional: R$ 14,90/Mês.</li>
