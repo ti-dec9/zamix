@@ -79,22 +79,14 @@ class Assineagora extends CI_Controller {
         ? é possível retornar mais mensagens também, através do message 
         ! para retornar mais parâmetros, entre em contato com o time de TI da ZAMIX e pergunte pela documentação
         */
-        echo $return->status;
-        
-        //Google Recaptcha
-       /* $SecretKey = "6LfBbfUdAAAAAN6s6tvH6ScH3WcfL_glGW96Ks-A";
-        //Pego a validação do Captcha feita pelo usuário
-         if (isset($this->input->get('g-recaptcha-response')) {
-            $check_captcha = $this->input->get('g-recaptcha-response');
-        } 
-        // Verifico se foi feita a postagem do Captcha
-        if (isset($check_captcha)) {
-            // Valido se a ação do usuário foi correta junto ao google
-            $retorn_captcha = json_decode(file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $SecretKey . '&response=' . $POST['g-recaptcha-response']));
-        }
-        if ($response_captcha->success) {
-            
-        }*/
+        $data = array(
+            'internet_id' => "$internet_id", // esse campo tem é o ID do plano. Ex: PremiumCasaP, PremiumCasaM e PremiumCasaG
+            'status' => "$return->status"
+        );
+
+        $data = json_encode($data, TRUE);
+
+        echo $data;
     }
 
     /*
@@ -113,8 +105,7 @@ class Assineagora extends CI_Controller {
         foreach ($state as $value) {
             $state = $value->nome;
         }
-        $city = $this->input->get('city');
-            
+        $city = $this->input->get('city');            
 
         // insira uma conta de e-mail valida em sua hospedagem
         //$from = "xploter13@gmail.com";

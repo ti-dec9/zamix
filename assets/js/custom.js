@@ -96,9 +96,10 @@
                     msg("<b>Processando... Por favor, aguarde!<b>", 'alert');
                 },
                 success: function(response) {
-                    //console.log(response);
-                    if (response === '200') {
-                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=ok');
+                    var obj = jQuery.parseJSON(response);
+                    //console.log(obj.status);
+                    if (obj.status === '200') {
+                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=ok&plano=' + obj.internet_id);
                         /* msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
                         //$.unblockUI();
                         //swal("", "Registros cadastrados com sucesso!", "success");
