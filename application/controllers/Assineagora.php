@@ -182,7 +182,7 @@ class Assineagora extends CI_Controller {
         $status = $this->input->get('status');
         $previous_link = '';
         if ($status === 'ok') {
-            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> *Verifique com o consultor a existência de pro-rata com o valor dos dias utilizados.";    
+            $data['message'] = "<b>Recebemos o seu pedido!</b> <br><br> Está quase na hora de você aproveitar o melhor da nossa conexão. <br><br> Em até 24h, um de nossos consultores entrará em contato com você. <br><br> Fique de olho no seu e-mail, SMS ou telefone. <br<br> Viva a experiência laranja!";    
             $data['status_message'] = 'success';    
             $data['btn_link'] = base_url();        
             $data['label_link'] = 'Ir para a página principal';        

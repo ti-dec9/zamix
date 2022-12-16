@@ -51,7 +51,7 @@
                             <h5 class="color-black">Angra dos Reis</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/dBSoHfhA7Bx1W7A8A" target="_blank">Avenida Francisco Magalhães de Castro, 611, LT 1, Loja 1, Parque Mambucaba</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -59,7 +59,7 @@
                             <h5 class="color-black">Barra do Piraí</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/qxpLNzjGh9jYbh6L6" target="_blank">Rua Paulo de Frontin, 139, Loja E, térreo, Edifício Constantino Rabelo - Centro</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2424472015" target="_blank">(24) 2447-2015<a/></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -67,7 +67,7 @@
                             <h5 class="color-black">Juiz de Fora</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/ZcZPh4MJeEnFtD4f9" target="_blank">Avenida Rui Barbosa, 81, Mariano Procópio</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:3232166953" target="_blank">(32) 3216-6953</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -75,12 +75,12 @@
                             <h5 class="color-black">Resende</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/zD3WbrcV8yCiSLEQ7" target="_blank">Rua Alan Kardec, 50, Edifício Golden Center, sala 704, Jardim Tropical</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433834800" target="_blank">(24) 3383-4800</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:080042620000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/f6V8MrdWjWtvBEm38" target="_blank">Avenida das Mangueiras Sul, 434, Loja 2, Cidade Alegria</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433834800" target="_blank">(24) 3383-4800</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -88,7 +88,7 @@
                             <h5 class="color-black">Valença</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/6tAxK4PWLBhJczQe8" target="_blank">Avenida Nilo Peçanha, 580, Centro</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -96,7 +96,7 @@
                             <h5 class="color-black">Vassouras</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/QLQeCsJmDRh6BR8B8" target="_blank">Rua Caetano Furquim, 245, Centro</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -104,12 +104,12 @@
                             <h5 class="color-black">Volta Redonda</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/UQ6zYadpbSFTw9XY9" target="_blank">Avenida Paulo de Frontin, 590, Edifício Plaza Business Center, Aterrado</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/sjDze7WNbbs6yuBG6" target="_blank">Avenida Pastor César Dacorso Filho, 520, Edifício Dubai, Vila Mury</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -117,7 +117,7 @@
                             <h5 class="color-black">Mangaratiba</h5>
                             <ul class="list-unstyled">
                                 <li>Atendimento Remoto</li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:2433450002" target="_blank">(24) 3345-0002</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                         </div>
