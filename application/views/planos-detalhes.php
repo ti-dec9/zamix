@@ -155,7 +155,7 @@
                     <h2 class="title-big f-s-20 color-black">OBSERVAÇÕES</h2>
                     <ul class="list-unstyled mt-3">
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os equipamentos instalados no endereço do cliente de uso e propriedade da Zamix, disponibilizados sob comodato e devem ser devolvidos ao final do contrato.</li>
-                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone (24) 3345-0002, que também é WhatsApp.</li>
+                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone 0800 426 2000, que também é WhatsApp.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> O valor da primeira mensalidade será calculado com base nos dias utilizados dentro do mês contratado, sendo cobrado o valor conforme o plano escolhido pelo cliente nesta tabela.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os planos estão sujeitos à análise de viabilidade técnica.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Autorizo o envio de avisos, cobranças e notificações por SMS.</li>
@@ -258,7 +258,7 @@
                     <h2 class="title-big f-s-20 color-black">OBSERVAÇÕES</h2>
                     <ul class="list-unstyled">
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os equipamentos instalados no endereço do cliente de uso e propriedade da Zamix, disponibilizados sob comodato e devem ser devolvidos ao final do contrato.</li>
-                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone (24) 3345-0002, que
+                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone 0800 426 2000, que
                             também é WhatsApp.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> O valor da primeira mensalidade será calculado com base nos dias utilizados dentro do mês contratado, sendo cobrado o valor conforme o plano escolhido pelo cliente nesta tabela</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os planos estão sujeitos à análise de viabilidade técnica</li>
@@ -366,7 +366,7 @@
                     <h2 class="title-big f-s-20 color-black">OBSERVAÇÕES</h2>
                     <ul class="list-unstyled">
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os equipamentos instalados no endereço do cliente de uso e propriedade da Zamix, disponibilizados sob comodato e devem ser devolvidos ao final do contrato.</li>
-                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone (24) 3345-0002, que
+                        <li><i class="fi fi-rr-circle f-s-12"></i> Todas as faturas são enviadas para o e-mail do assinante e podem ser acessadas pelo Painel do Assinante e pelo aplicativo Minha Zamix. Elas ainda podem ser solicitadas através do telefone 0800 426 2000, que
                             também é WhatsApp.</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> O valor da primeira mensalidade será calculado com base nos dias utilizados dentro do mês contratado, sendo cobrado o valor conforme o plano escolhido pelo cliente nesta tabela</li>
                         <li><i class="fi fi-rr-circle f-s-12"></i> Todos os planos estão sujeitos à análise de viabilidade técnica</li>

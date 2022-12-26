@@ -75,7 +75,7 @@
                             <h5 class="color-black">Resende</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/zD3WbrcV8yCiSLEQ7" target="_blank">Rua Alan Kardec, 50, Edifício Golden Center, sala 704, Jardim Tropical</a></li>
-                                <li><i class="fas fa-phone-alt"></i> <a href="tel:080042620000" target="_blank">0800 426 2000</a></li>
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:08004262000" target="_blank">0800 426 2000</a></li>
                             </ul>
                             <hr>
                             <ul class="list-unstyled">
