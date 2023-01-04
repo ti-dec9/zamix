@@ -212,7 +212,7 @@
                         <i class="fi fi-rr-cross"></i>
                     </button>
                     <p>Chega de pagar uma taxa extra para cada imprevisto</p>   
-                    <p>Quando precisar, use sem se preocupar com o valor da fatura no início do mês. Por apenas <strong class="color-orange">R$ 6,99 mensais</strong>, você tem todos os serviços adicionais disponíveis na Zamix:</p>
+                    <p>Quando precisar, use sem se preocupar com o valor da fatura no início do mês. Por apenas <strong class="color-orange">R$ 9,99 mensais</strong>, você tem todos os serviços adicionais disponíveis na Zamix:</p>
                     <ul class="list-unstyled">
                         <li><i class="fi fi-rr-checkbox f-s-12"></i> Atendimento agilizado</li>
                         <li><i class="fi fi-rr-checkbox f-s-12"></i> Manutenção simples</li>

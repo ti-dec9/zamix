@@ -340,7 +340,7 @@
                                             <br><br>
                                             <div class="about-service-prime mb-2">
                                                 <h5 class="color-orange text-bold f-s-12">Serviços Prime <small>Adicional</small></h5>
-                                                <span class="service-dolar color-orange">R$</span> <span class="service-price">6</span> <span class="service-decimal">,99</span>
+                                                <span class="service-dolar color-orange">R$</span> <span class="service-price">9</span> <span class="service-decimal">,99</span>
                                                 <br><br>
                                                 <p>Valor final mensal</p>
                                                 <span class="result"></span>                                                
