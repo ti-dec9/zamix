@@ -44,49 +44,58 @@ class Assineagora extends CI_Controller {
         $address_number = $this->input->get("address-number");
         $neighborhood = $this->input->get("neighborhood");
         $state = $this->Model_Estados->find_id($this->input->get('state'));
-        foreach ($state as $value) {
-            $state = $value->nome;
-        }
-        $city = $this->input->get("city");
-        $reference = $this->input->get("reference");
-        $why = $this->input->get("why");
-        $identify = $this->input->get("identify");
-        $arrData = array(            
-            "nome" => "$name",
-            "data_nasc" => "$birth",
-            "email" => "$email",
-            "telefone" => "$phone",
-            "cpfcnpj" => "$cpf_cnpj",
-            "internet_id" => $internet_id,
-            "cep" => "$cep",
-            "logradouro" => "$street",
-            "numero" => "$address_number",
-            "bairro" => "$neighborhood",
-            "estado_sigla" => "$state",
-            "cidade_nome" => "$city",
-            "ponto_referencia" => "$reference",
-            "voucher" => "$voucher",
-            "origem_id" => "1",
-            "src_table_name" => "canais_atendimento",
-            "src_table_id" => "5",                      
-        );
-        /* echo "<pre>";
-        print_r($arrData);
-        echo "</pre>"; */
-        $return = $this->Model_Planos->send($arrData);
-        /*
-        * retorna o status
-        ? é possível retornar mais mensagens também, através do message 
-        ! para retornar mais parâmetros, entre em contato com o time de TI da ZAMIX e pergunte pela documentação
-        */
-        $data = array(
-            'internet_id' => "$internet_id", // esse campo tem é o ID do plano. Ex: PremiumCasaP, PremiumCasaM e PremiumCasaG
-            'status' => "$return->status"
-        );
 
-        $data = json_encode($data, TRUE);
+        $regex = "[áàâãäªéèêëíìîïóòôõöºúùûüçñ]+"; //"[áàâãäªÁÀÂÃÄéèêëÉÈÊËíìîïÍÌÎÏóòôõöºÓÒÔÕÖúùûüÚÙÛÜçÇÑñ.]";
+        $Check_email_accent = (bool) preg_match("/" . $regex . "/i", $email);
+        
+        if (!$Check_email_accent) {
+            foreach ($state as $value) {
+                $state = $value->nome;
+            }
+            $city = $this->input->get("city");
+            $reference = $this->input->get("reference");
+            $arrData = array(            
+                "nome" => "$name",
+                "data_nasc" => "$birth",
+                "email" => "$email",
+                "telefone" => "$phone",
+                "cpfcnpj" => "$cpf_cnpj",
+                "internet_id" => $internet_id,
+                "cep" => "$cep",
+                "logradouro" => "$street",
+                "numero" => "$address_number",
+                "bairro" => "$neighborhood",
+                "estado_sigla" => "$state",
+                "cidade_nome" => "$city",
+                "ponto_referencia" => "$reference",
+                "voucher" => "$voucher",
+                "origem_id" => "1",
+                "src_table_name" => "canais_atendimento",
+                "src_table_id" => "5",                      
+            );
+            /* echo "<pre>";
+            print_r($arrData);
+            echo "</pre>"; */
 
-        echo $data;
+            $return = $this->Model_Planos->send($arrData);
+            /*
+            * retorna o status
+            ? é possível retornar mais mensagens também, através do message 
+            ! para retornar mais parâmetros, entre em contato com o time de TI da ZAMIX e pergunte pela documentação
+            */
+            $data = array(
+                'internet_id' => "$internet_id", // esse campo tem é o ID do plano. Ex: PremiumCasaP, PremiumCasaM e PremiumCasaG
+                'status' => "$return->status"
+            );
+    
+            $data = json_encode($data, TRUE);
+    
+            echo $data;
+
+            //echo 'email sem acento'; 
+        } else {
+            echo 'email com acento';
+        }        
     }
 
     /*

@@ -56,7 +56,8 @@
                                 </div>                            
                                 <div class="col-lg-8">
                                     <div class="form-group">
-                                        <input type="text" name="email" class="form-control" placeholder="E-mail" required>
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="E-mail" required>
+                                        <div class="error-regex error invalid-feedback">Email inválido</div>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">

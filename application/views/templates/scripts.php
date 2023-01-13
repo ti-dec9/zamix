@@ -13,7 +13,7 @@
     <script src="<?php echo base_url('assets/vendors/validation/messages_pt_BR.js') ?>"></script>    
     <script src="<?php echo base_url('assets/vendors/jquery.blockUI/jquery.blockUI.js') ?>"></script>
     <script src="<?php echo base_url('assets/vendors/sweetalert2/dist/sweetalert2.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/js/custom.js') ?>"></script>
+    <script src="<?php echo base_url('assets/js/custom.js?v=1') ?>"></script>
     <script>
         var $_PowerZAP = {defaultCountry: '+55',widget_id: '2206',company: '6581'};
         (function(i,s,o,g,r,a,m) {i[r]={context: {id: 'd513b217564c82620c1d3bf0316f2451'}};

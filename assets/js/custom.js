@@ -2,6 +2,8 @@
     BASE_URL = window.location.origin + '/';
     //BASE_URL = window.location.origin + '/zamix/';
 
+    $('.error-regex').hide();
+
     // Navbar Fixed  
     $('.logo-menu').attr("src", BASE_URL + "assets/img/logo.png");
     $(window).on('scroll', function() {
@@ -93,26 +95,25 @@
                 //async: false, //blocks window close
                 beforeSend: function(data) {
                     //console.log(data);
-                    msg("<b>Processando... Por favor, aguarde!<b>", 'alert');
+                    //msg("<b>Processando... Por favor, aguarde!<b>", 'alert');
                 },
-                success: function(response) {
-                    var obj = jQuery.parseJSON(response);
-                    //console.log(obj.status);
-                    if (obj.status === '200') {
-                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=ok&plano=' + obj.internet_id);
-                        /* msg("Recebemos o seu pedido! <br><br> Entraremos em contato com a confirmação nas próximas 24h via e-mail, SMS ou ligação. <br><br> Você acabou de ganhar um desconto na primeira mensalidade completa por R$ 79,90*. <br><br> *Verifique com o consultor a existência de prorrata com o valor dos dias utilizados.", "success");
-                        //$.unblockUI();
-                        //swal("", "Registros cadastrados com sucesso!", "success");
-                        setTimeout(() => {
-                            $(location).attr('href', '');
-                        }, 10000); */
-                    } else if (response === '201') {
-                        //$.unblockUI();
-                        $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=venda-ja-cadastrada');
-                        //msg("<b>Venda já cadastrada!</b>", "error");
-                    } else if (data === '') {
-                        //$.unblockUI();
-                        msg("<b>Erro ao cadastrar!<b>", "error");
+                success: function(response) {                      
+                    //console.log(response);
+                    if (response === 'email com acento') {
+                        $('.error-regex').fadeIn('slow');  
+                    } else {
+                        $('.error-regex').hide();
+                        var obj = jQuery.parseJSON(response);
+                        //console.log(obj.status);
+                        if (obj.status === '200') {
+                            $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=ok&plano=' + obj.internet_id);
+                        } else if (response === '201') {
+                            //$.unblockUI();
+                            $(location).attr('href', BASE_URL + 'assine-agora/resultado?status=venda-ja-cadastrada');
+                        } else if (data === '') {
+                            //$.unblockUI();
+                            msg("<b>Erro ao contratar plano!<b>", "error");
+                        }
                     }
                 },
                 error: function(data) {
@@ -126,6 +127,8 @@
             });
         }
     });
+
+
 
     /************************
      *  FORM LINK DEDICADO
