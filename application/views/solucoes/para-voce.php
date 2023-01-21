@@ -81,7 +81,7 @@
                                 <img src="<?php echo base_url(); ?>assets/img/plans/<?php echo $value->image; ?>" class="w-100 pb-50" alt="">
                             </div>
                             <div class="col-lg-12 pt-4">
-                                <a href="<?php echo base_url(); ?>assine-agora?plano=<?php echo $value->id_plan; ?>" class="btn btn-orange hvr-grow">Quero esse!</a>
+                                <a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=residencial" class="btn btn-orange hvr-grow">Quero esse!</a>
                             </div>
                         </div>
                     </div>  
@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <p class="text-center"><a href="<?php echo base_url('assine-agora?plano=BasicoUltraMix500'); ?>" class="btn btn-orange hvr-grow" id="btn-plan-4">Quero esse!</a></p>
+                                        <p class="text-center"><a href="<?php echo base_url('assine-agora?id=5&plano=BasicoUltraMix500'); ?>" class="btn btn-orange hvr-grow" id="btn-plan-4">Quero esse!</a></p>
                                     </div>
                                 </div>
                             </div>  

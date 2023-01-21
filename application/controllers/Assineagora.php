@@ -16,11 +16,12 @@ class Assineagora extends CI_Controller {
         if(empty($this->input->get('plano'))) {
             redirect(base_url());
         } else {
-            $data['status_prime'] = 'true';
-            $data['plan'] = $this->Model_Planos->find_slug($this->input->get('plano'), 'planos_para_voce');
-            if (empty($data['plan'])) {
+            $data['status_prime'] = 'true';       
+            if ($this->input->get('tipo') === 'residencial') {
+            $data['plan'] = $this->Model_Planos->find_slug($this->input->get('id'), 'planos_para_voce');
+            }elseif ($this->input->get('tipo') === 'empresarial') {
                 $data['status_prime'] = 'false';
-                $data['plan'] = $this->Model_Planos->find_slug($this->input->get('plano'), 'planos_para_empresa');
+                $data['plan'] = $this->Model_Planos->find_slug($this->input->get('id'), 'planos_para_empresa');
             }
         }
         $this->load->view('assine-agora', $data);

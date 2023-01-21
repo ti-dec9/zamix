@@ -99,7 +99,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 pt-4">
-                                                <p><a href="<?php echo base_url(); ?>assine-agora?plano=<?php echo $value->id_plan; ?>" class="btn btn-orange hvr-grow">Quero esse!</a></p>
+                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=empresarial" class="btn btn-orange hvr-grow">Quero esse!</a></p>
                                             </div>
                                         </div>
                                     </div>  
@@ -135,7 +135,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 pt-4">
-                                                <p><a href="<?php echo base_url(); ?>assine-agora?plano=<?php echo $value->id_plan; ?>" class="btn btn-orange hvr-grow">Quero esse!</a></p>
+                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=empresarial" class="btn btn-orange hvr-grow">Quero esse!</a></p>
                                             </div>
                                         </div>
                                     </div>  
@@ -346,7 +346,7 @@
     <?php $this->load->view('templates/scripts') ?>
     <script src="<?php echo base_url('assets/vendors/inputmask/jquery.inputmask.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/js/valida-documento.js') ?>"></script>
-    <script src="<?php echo base_url('assets/js/ajx.js') ?>"></script>
+    <script src="<?php echo base_url(); ?>assets/js/ajx.js?v=<?php echo md5(time()); ?>"></script>
     <script>        
         $(function() {    
             //select2

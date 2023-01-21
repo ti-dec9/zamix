@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$active_group = 'default';
+$active_group = 'production';
 $query_builder = TRUE;
 
 $db['default'] = array(
@@ -28,7 +28,7 @@ $db['default'] = array(
 
 $db['production'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '67.23.238.59',
 	'username' => 'rootzamix_root',
 	'password' => 'XY%oc1sm$f0F',
 	'database' => 'rootzamix_production',

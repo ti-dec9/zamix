@@ -66,7 +66,7 @@ class Model_Planos extends CI_Model {
      * @param int $id
      */
     public function find_slug($id, $table) {
-        $this->db->select('*')->from("$table")->where('id_plan', $id);
+        $this->db->select('*')->from("$table")->where('id', $id);
         $this->query = $this->db->get();
         if ($this->query->num_rows() > 0) :
             $this->data = $this->query->result();

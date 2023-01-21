@@ -41,7 +41,9 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <input type="text" name="voucher" class="form-control" placeholder="Voucher">
-                                        <input type="hidden" name="plan" value="<?php echo $_GET['plano']; ?>">
+                                        <?php foreach ($plan as $value) : ?>
+                                        <input type="hidden" name="plan" value="<?php echo $value->slug; ?>">
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -178,7 +180,7 @@
                                     <br><br>
                                     <div class="about-service-prime mb-2">
                                         <h5 class="color-orange text-bold f-s-12">Serviços Prime <small>Adicional</small></h5>
-                                        <span class="service-dolar color-orange">R$</span> <span class="service-price">6</span> <span class="service-decimal">,99</span>
+                                        <span class="service-dolar color-orange">R$</span> <span class="service-price">9</span> <span class="service-decimal">,99</span>
                                         <br><br>
                                         <p>Valor final mensal</p>
                                         <span class="result"></span>                                             
@@ -236,7 +238,7 @@
     <?php $this->load->view('templates/scripts') ?>
     <script src="<?php echo base_url('assets/vendors/inputmask/jquery.inputmask.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/js/valida-documento.js') ?>"></script>    
-    <script src="<?php echo base_url('assets/js/ajx.js') ?>"></script>
+    <script src="<?php echo base_url(); ?>assets/js/ajx.js?v=<?php echo md5(time()); ?>"></script>
     <script>        
         $(function() {    
             //select2

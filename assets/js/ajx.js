@@ -1,6 +1,6 @@
 $(function() {
-    BASE_URL = window.location.origin + '/zamix/';
-    //BASE_URL = window.location.origin + '/';
+    //BASE_URL = window.location.origin + '/zamix/';
+    BASE_URL = window.location.origin + '/';
 
     $("#cmb-state").change(function() {
         var dados = 'id=' + $(this).val();
@@ -30,7 +30,7 @@ $(function() {
             var price = $(".modal-price").text();
             var decimal = $(".modal-decimal").text().replace(',', '.');
             var soma = parseFloat(price + decimal);
-            total = soma + 6.99;
+            total = soma + 9.99;
             subTotal = total.toFixed(2);
             result = subTotal.toString();
             $(".result").text("R$ " + result.replace('.', ','));
