@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <p class="text-center"><a href="<?php echo base_url('assine-agora?id=5&plano=BasicoUltraMix500'); ?>" class="btn btn-orange hvr-grow" id="btn-plan-4">Quero esse!</a></p>
+                                        <p class="text-center"><a href="<?php echo base_url('assine-agora?id=5&plano=BasicoUltraMix500&tipo=residencial'); ?>" class="btn btn-orange hvr-grow" id="btn-plan-4">Quero esse!</a></p>
                                     </div>
                                 </div>
                             </div>  

@@ -42,7 +42,7 @@
                                     <div class="form-group">
                                         <input type="text" name="voucher" class="form-control" placeholder="Voucher">
                                         <?php foreach ($plan as $value) : ?>
-                                        <input type="hidden" name="plan" value="<?php echo $value->slug; ?>">
+                                        <input type="hidden" name="plan" value="<?php echo $value->id_plan; ?>">
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
