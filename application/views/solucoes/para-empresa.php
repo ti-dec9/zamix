@@ -151,7 +151,7 @@
                     <ul class="list-unstyled">
                         <li>(*) Desconto de adesão válido para a primeira mensalidade paga até o vencimento. Sujeito a pro rata referente aos dias utilizados até o fim do mês em que o serviço foi instalado.</li>
                         <li>(1) Valores válidos para pagamento com desconto até o vencimento, após esta data, o valor a pagar será o designado na coluna “valor da assinatura” com juros e multa. <a href="<?php echo base_url('planos-detalhes'); ?>">CONFIRA A TABELA.</a></li>
-                        <li>(2) Planos acima de 100Mb residenciais ou comerciais estão sujeitos a viabilidade técnica, sendo válido também para a disponibilização de Wi-Fi AC.</li>                        
+                        <li>(2) Planos acima de 100 Mega residencial ou comercial estão sujeitos a viabilidade técnica, sendo válido também para a disponibilização de Wi-Fi AC.</li>                        
                     </ul>
                     <p class="m-text-align-left">OBS: Todos os equipamentos instalados para o cliente estão em regime de comodato (propriedade da empresa e somente disponível para utilização do cliente); Planos válidos à partir de 02/09/2019. </p>
                 </div>

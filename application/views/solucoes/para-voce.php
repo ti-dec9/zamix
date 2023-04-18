@@ -117,7 +117,7 @@
                             <h5 class="card-title">
                                 Exclusivo
                             </h5>
-                            <p class="card-text color-black">Conecte-se à vontade com <strong>planos de até 1Gbps de velocidade</strong> garantidos via cabo, sem taxa de adesão.</p>
+                            <p class="card-text color-black">Conecte-se à vontade com <strong>planos de até 1 Giga de velocidade</strong> garantidos via cabo, sem taxa de adesão.</p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,8 @@
                                             <h4>UltraMix 500</h4>
                                         </div>
                                         <div>
-                                            <p>Velocidade para download: 500 Mbps <br> Velocidade para upload: 500 Mbps <br> Roteador Gigabit Dual-band incluso <br> Adesão grátis e Wi-Fi incluso</p>
+                                            <p>Download: 500 Mega <br> Upload: 500 Mega <br> Roteador Gigabit Dual-band incluso <br> Adesão grátis</p>
+                                            <p><a href="https://zamix.com.br/planos-detalhes">+ Detalhes</a></p>
                                         </div>                                       
                                     </div>       
                                     <div class="col-lg-3 align-self-center">
