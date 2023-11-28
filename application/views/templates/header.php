@@ -21,7 +21,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://painel.zamix.com.br/vouchers">Indique um amigo</a>
+                        <a class="nav-link" href="https://materiais.zamix.com.br/amigodeinternet">Indique um amigo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('blog') ?>">Blog Zona X</a>
