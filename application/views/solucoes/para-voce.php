@@ -8,6 +8,9 @@
     <?php $this->load->view('templates/styles') ?>
     
     <title>Zamix | Para Você</title>
+
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11227918952"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11227918952'); </script>
 </head>
 
 <body>
@@ -81,7 +84,7 @@
                                 <img src="<?php echo base_url(); ?>assets/img/plans/<?php echo $value->image; ?>" class="w-100 pb-50" alt="">
                             </div>
                             <div class="col-lg-12 pt-4">
-                                <a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=residencial" class="btn btn-orange hvr-grow">Quero esse!</a>
+                                <a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=residencial" class="btn btn-orange hvr-grow" id="btn-plan-<?php echo $value->id_plan; ?>">Quero esse!</a>
                             </div>
                         </div>
                     </div>  
@@ -182,6 +185,24 @@
 
     <!-- JavaScript -->
     <?php $this->load->view('templates/scripts') ?>
+    <!-- Event snippet for Enviar formulário de contratação I Site conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11227918952/2AdrCK7V6rkYEOjk8ekp',
+        'value': 100.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+    }
+    </script>
 </body>
 
 </html>

@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
@@ -81,17 +81,17 @@
                                 </div>                            
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" name="street" class="form-control" placeholder="Rua" required>
+                                        <input type="text" name="street" id="street" class="form-control" placeholder="Rua" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" name="address-number" class="form-control" placeholder="Número" required>
+                                        <input type="text" name="address-number" id="address-number" class="form-control" placeholder="Número" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" name="neighborhood" class="form-control" placeholder="Bairro" required>
+                                        <input type="text" name="neighborhood" class="form-control" id="neighborhood" placeholder="Bairro" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-6">
@@ -126,12 +126,12 @@
                                 </div>                            
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" name="reference" class="form-control" placeholder="Ponto de Referência" required>
+                                        <input type="text" name="reference" class="form-control" id="reference" placeholder="Ponto de Referência" required>
                                     </div>
                                 </div>                            
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <select name="why" class="form-control" style="width: 100%;" required>
+                                        <select name="why" class="form-control" id="why" style="width: 100%;" required>
                                             <option value="" selected disabled>Como nos conheceu?</option>
                                             <option value="1">Amigo/Família</option>
                                             <option value="2">Campanha</option>
@@ -147,7 +147,7 @@
                                 </div>   
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <select name="identify" class="form-control" style="width: 100%;" required>
+                                        <select name="identify" id="identify" class="form-control" style="width: 100%;" required>
                                             <option value="" selected disabled>Como você se identifica?</option>
                                             <option value="Masculino">Masculino</option>
                                             <option value="Feminino">Feminino</option>
@@ -237,7 +237,7 @@
     <!-- JavaScript -->
     <?php $this->load->view('templates/scripts') ?>
     <script src="<?php echo base_url('assets/vendors/inputmask/jquery.inputmask.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/js/valida-documento.js') ?>"></script>    
+    <script src="<?php echo base_url(); ?>assets/js/valida-documento.js?v=<?php echo md5(time()); ?>"></script>    
     <script src="<?php echo base_url(); ?>assets/js/ajx.js?v=<?php echo md5(time()); ?>"></script>
     <script>        
         $(function() {    

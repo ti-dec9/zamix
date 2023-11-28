@@ -216,6 +216,11 @@ ul[class*=list-] li i {
 }
  */
 
+.call-to-action-header {
+    position: absolute; 
+    left: -70px;
+    bottom: 0;
+}
 
 /* triangle */
 

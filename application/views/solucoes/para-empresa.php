@@ -99,7 +99,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 pt-4">
-                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=empresarial" class="btn btn-orange hvr-grow">Quero esse!</a></p>
+                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->name; ?>&tipo=empresarial" class="btn btn-orange hvr-grow" id="btn-plan-<?php echo $value->id_plan; ?>">Quero esse!</a></p>
                                             </div>
                                         </div>
                                     </div>  
@@ -135,7 +135,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 pt-4">
-                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->id_plan; ?>&tipo=empresarial" class="btn btn-orange hvr-grow">Quero esse!</a></p>
+                                                <p><a href="<?php echo base_url(); ?>assine-agora?id=<?php echo $value->id; ?>&plano=<?php echo $value->name; ?>&tipo=empresarial" class="btn btn-orange hvr-grow" id="btn-plan-<?php echo $value->id_plan; ?>">Quero esse!</a></p>
                                             </div>
                                         </div>
                                     </div>  
@@ -159,7 +159,7 @@
         </div>        
     </section>
 
-    <!-- MODAL PLANOS -->
+    <!-- MODAL PLANOS --
     <div class="modal modal-plan fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -311,7 +311,7 @@
                                 <div class="col-lg-4">
                                     <div class="card pl-4 pt-4 pb-4 shadow rounded border-0">
                                         <div class="card-body">
-                                            <!-- <h5 class="card-title color-orange">Detalhes do seu plano</h5> -->
+                                            <!-- <h5 class="card-title color-orange">Detalhes do seu plano</h5> --
                                             <p class="card-text">Você selecionou o plano</p>
                                             <p class="name-plan text-uppercase color-orange"></p>
                                             <p class="mt-5 text-bold f-s-12 color-orange">Valor com desconto</p>

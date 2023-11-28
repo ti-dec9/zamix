@@ -65,6 +65,12 @@
 /* medium devices (tablets) */
 
 @media (max-width: 991px) {
+    .call-to-action-header {
+        position: absolute;
+        left: 28%;
+        bottom: 35px;
+    }
+
     .slideshow {
         background: url('../img/slideshow/01-mobile.jpg') no-repeat scroll center 0/cover;
     }
@@ -119,6 +125,12 @@
 /* small devices (phones, 280px and down) */
 
 @media (max-width: 600px) {
+    .call-to-action-header {
+        position: absolute;
+        left: 10%;
+        bottom: 25px;
+    }
+
     #sc-first p,
     .business p,
     .circle p,

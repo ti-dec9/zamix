@@ -15,7 +15,7 @@ function validaFormato(element) {
                 element.select();
                 return false;
             } else {
-                resultValidationCpfCnpj.innerText = "Este é um CPF válido!";
+                resultValidationCpfCnpj.innerHTML = "<span style='color: green;'>Este é um CPF válido!</span>";
                 element.value = mascaraCPF(strDocument);
                 return true;
             }
@@ -26,7 +26,7 @@ function validaFormato(element) {
                 element.select();
                 return false;
             } else {
-                resultValidationCpfCnpj.innerText = "Este é um CNPJ válido!";
+                resultValidationCpfCnpj.innerHTML = "<span style='color: green;'>Este é um CNPJ válido!</span>";
                 element.value = mascaraCNPJ(strDocument);
                 return true;
             }
