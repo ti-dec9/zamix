@@ -267,4 +267,53 @@
     .testimonial4_slide img {
         width: 100%;
     }
+
+    .sc-tech-cam {
+        background-image: none;
+        padding: 80px 0 80px 0;
+
+    }
+
+    .sc-tech-cam .title-big {
+        font-size: 1.8rem !important;
+    }
+
+    .visual-plan-change {
+        padding: 80px 15px 80px 15px;
+    }
+
+    .sc-visualiza .description {
+        padding-right: initial;
+    }
+
+    .visual-plan-change .img-cam-interna {
+        width: 180px;
+    }
+
+    .visual-plan-change .img-cam-externa {
+        width: 212px;
+        margin-left: 35px !important;
+    }
+
+    .visual-plan-change .title-big {
+        font-size: 1.8rem !important;
+    }
+
+    .sc-inovation .title-md {
+        font-size: 2rem;
+    }
+
+    .sc-mobile-cam {
+        height: auto;
+        padding: 80px 0 80px 0;
+        text-align: center;
+    }
+
+    .sc-mobile-cam .title-big {
+        font-size: 2rem !important;
+    }
+
+    .sc-mobile-cam ul li {
+        margin-top: 20px;
+    }
 }

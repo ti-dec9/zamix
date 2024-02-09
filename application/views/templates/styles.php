@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/select2/css/select2.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/vendors/sweetalert2/dist/sweetalert2.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/helper.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/responsive.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css?=<?php echo md5(time()); ?>">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css?=<?php echo md5(time()); ?>">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
