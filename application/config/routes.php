@@ -16,4 +16,4 @@ $route['blog/p'] = 'blog';
 $route['admin'] = 'admin/login';
 $route['politica-de-privacidade'] = 'politicaprivacidade';
 $route['termo-de-uso'] = 'termodeuso';
-$route['hlg/visualiza'] = 'visualiza';
+$route['visualiza'] = 'visualiza';

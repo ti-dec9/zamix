@@ -26,6 +26,6 @@
 
     gtag('config', 'UA-2172900-50');
     </script>
-    <!-- RD STATION -->
+    <!-- RD STATION --
     <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/7bbb9d58-235d-479a-9644-64ff9936e9f5-loader.js" ></script>
     <!-- End RD STATION -->

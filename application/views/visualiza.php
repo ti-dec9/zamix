@@ -6,6 +6,7 @@
     <?php $this->load->view('templates/metatags') ?>
     <!-- STYLES -->
     <?php $this->load->view('templates/styles') ?>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Zamix | Visualiza</title>
 </head>
 
@@ -20,7 +21,7 @@
             <div class="row h-100">
                 <div class="col-lg-6 align-self-center text-white">
                     <!-- <h2 class="title-big">Clube <span class="color-orange">Zamix</span></h2> -->
-                    <img src="<?php echo base_url('assets/img/logo-visualiza.webp') ?>"
+                    <img src="<?php echo base_url('assets/img/logo-visualiza.png') ?>"
                         class="w-100" alt="">
                 </div>
             </div>
@@ -31,19 +32,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <img src="<?php echo base_url('assets/img/about-cam.webp') ?>"
+                    <img src="<?php echo base_url('assets/img/about-cam.png') ?>"
                         class="img-fluid" alt="cam zamix">
                 </div>
                 <div class="col-lg-7 pl-4 align-self-center">
                     <h4 class="title-md color-orange">#InovaçãoLaranja <br></h4>
                     <h4 class="title-md color-black">em proteção</h4>
                     <div class="description">
-                        <p class="color-black f-s-18">A Zamix leva até você o serviço de
+                        <p class="color-black f-s-18">A Zamix leva até você o serviço de <br>
                             <span class="font-weight-bold">monitoramento via câmeras Wi-Fi.</span>
                         </p>
                         <p class="color-black f-s-18">
-                            A solução mais eficiente para promover cuidado e tranquilidade
-                            dentro e fora de casa, mesmo quando você estiver ausente.
+                            A solução mais eficiente para promover <br> cuidado e tranquilidade
+                            dentro e fora de casa, <br> mesmo quando você estiver ausente.
                         </p>
                     </div>
                 </div>
@@ -72,10 +73,10 @@
         </div>
     </section>
 
-    <section class="sc-tech-cam bg-grayscale">
-        <div class="container">
+    <section class="sc-tech-cam">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 pr-md-5">
+                <div class="col-lg-6 bg-grayscale pr-md-5 rw-padding">
                     <h3 class="title-big color-black">
                         Tecnologia para <br> <span class="color-orange">cuidar</span> do que é seu:
                     </h3>
@@ -83,7 +84,7 @@
                     <ul class="list-unstyled color-black f-s-16">
                         <li><i class="fi fi-rr-checkbox"></i> Monitoramento 24h</li>
                         <li><i class="fi fi-rr-checkbox"></i> Imagens em alta definição</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Nitidez dia e noite</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Nitidez dia e 3noite</li>
                         <li><i class="fi fi-rr-checkbox"></i> Amplo campo de visão</li>
                         <li><i class="fi fi-rr-checkbox"></i> Flexibilidade de uso em diferentes espaços</li>
                         <li><i class="fi fi-rr-checkbox"></i> Instalação feita pela Zamix*</li>
@@ -91,6 +92,41 @@
                         <li><i class="fi fi-rr-checkbox"></i> Incluso cartão midro-SD 32GB</li>
                         <li><i class="fi fi-rr-checkbox"></i> Armazenamento em nuvem via Intelbras</li>
                     </ul>
+                </div>
+                <div class="col-lg-6 bg-orange rw-padding">
+                    <div class="row h-100 align-self-center">
+                        <div class="col-lg-12 pt-md-5 pl-5 pr-5">
+                            <h4 class="text-center text-white">
+                                O <span class="font-weight-bolder">VizualiZa</span> é a solução ideal para <span class="font-weight-bolder">cuidar daquilo que você mais ama</span>
+                            </h4>
+                        </div>
+                        <div class="col-lg-12 mt-5">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide sws-visualiza">
+                                        <img src="<?php echo base_url('assets/img/carrossel-visualiza/bebe.png'); ?>"
+                                            alt="...">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="<?php echo base_url('assets/img/carrossel-visualiza/home.png'); ?>"
+                                            alt="...">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="<?php echo base_url('assets/img/carrossel-visualiza/idoso.png'); ?>"
+                                            alt="...">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="<?php echo base_url('assets/img/carrossel-visualiza/pet.png'); ?>"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next text-white"></div>
+                                <div class="swiper-button-prev text-white"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,7 +150,7 @@
                 </div>
                 <div class="col-md-12">
                     <p class="text-center mt-5">
-                        <a href="#" class="btn btn-black hvr-buzz-out mt-2" target="_blank">
+                        <a href="https://api.whatsapp.com/send?phone=552433450002" target="_blank" class="btn btn-black hvr-buzz-out mt-2" target="_blank">
                             Quero Contratar!
                         </a>
                     </p>
@@ -132,7 +168,7 @@
                     </h4>
                     <p class="f-s-18 color-black">Com o <strong>App VizualiZa</strong>, você configura suas câmeras para
                         ter <strong>acesso em tempo real</strong>, além de receber
-                        notificações sempre que houver movimentação na sua casa.</p>    
+                        notificações sempre que houver movimentação na sua casa.</p>
                     <p class="title-big f-s-25 text-uppercase color-black">Baixe Agora!</p>
                     <ul class="list-inline list-store" style="margin-top: -50px;">
                         <li class="list-inline-item">
@@ -152,7 +188,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <img src="<?php echo base_url('assets/img/cam-phone.webp'); ?>"
+                    <img src="<?php echo base_url('assets/img/cam-phone.png'); ?>"
                         class="w-img-mobile d-block mx-auto" alt="">
                 </div>
             </div>
@@ -168,18 +204,20 @@
                     </h5>
                     <p class="f-s-18 color-black">
                         Tenha autonomia para definir como prefere armazenar suas imagens:
-                    </p>  
+                    </p>
                     <ul class="list-unstyled color-black f-s-16">
                         <li><i class="fi fi-rr-checkbox"></i> Cartão micro-SD</li>
                         <li><i class="fi fi-rr-checkbox"></i> DVR/NVR com tecnologia Onvif</li>
                         <li><i class="fi fi-rr-checkbox"></i> Serviço de gravação em nuvem Mibo Cloud*</li>
-                    </ul>  
+                    </ul>
                     <small>
-                    *O Mibo Cloud não faz parte das funcionalidades padrão do produto. O serviço está disponível para aquisição extra via Intelbras. Consulte a Loja Intelbras para mais informações.
+                        *O Mibo Cloud não faz parte das funcionalidades padrão do produto. O serviço está disponível
+                        para aquisição extra via Intelbras. Consulte a Loja Intelbras para mais informações.
                     </small>
                 </div>
                 <div class="col-md-6 align-self-center">
-                    <img src="<?php echo base_url('assets/img/cloud-visualiza.webp'); ?>" class="w-img-cloud d-block mx-auto" alt="">
+                    <img src="<?php echo base_url('assets/img/cloud-visualiza.png'); ?>"
+                        class="w-img-cloud d-block mx-auto" alt="">
                 </div>
             </div>
         </div>
@@ -191,6 +229,26 @@
 
     <!-- JavaScript -->
     <?php $this->load->view('templates/scripts') ?>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            /* cssMode: true, */
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: false,
+            keyboard: true,
+        });
+    </script>
 </body>
 
 </html>

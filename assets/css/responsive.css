@@ -71,9 +71,9 @@
         bottom: 35px;
     }
 
-    .slideshow {
+    /* .slideshow {
         background: url('../img/slideshow/01-mobile.jpg') no-repeat scroll center 0/cover;
-    }
+    } */
     #navbarSupportedContent {
         padding: 20px 10px;
         background: #fff;
@@ -137,9 +137,9 @@
     .m-align-center {
         text-align: center !important;
     }
-    .slideshow {
+    /* .slideshow {
         background: url('../img/slideshow/01-mobile.jpg') no-repeat scroll center 0/cover;
-    }
+    } */
     #navbarSupportedContent {
         background: #fff;
     }
@@ -315,5 +315,9 @@
 
     .sc-mobile-cam ul li {
         margin-top: 20px;
+    }
+
+    .sc-tech-cam .rw-padding {
+        padding: 40px 40px;
     }
 }

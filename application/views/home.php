@@ -6,6 +6,32 @@
     <?php $this->load->view('templates/metatags'); ?>
     <!-- STYLES -->
     <?php $this->load->view('templates/styles'); ?>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+        }
+    </style>
 
     <title>Zamix | Conexão até nos cômodos mais difíceis</title>
 </head>
@@ -16,9 +42,27 @@
     <?php $this->load->view('templates/header'); ?>
     <!-- ./HEADER -->
 
-    <section class="sc-default h--100 slideshow" id="particles-js">
-        <div class="container h-100">
-            <div class="row h-100">                
+    <section class="sc-default slideshow">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?php echo base_url('assets/img/slideshow/01.jpg');?>" class="d-none d-sm-block" alt="slide1">
+                            <img src="<?php echo base_url('assets/img/slideshow/01-mobile.jpg');?>" class="d-block d-sm-none" alt="slide1">
+                        </div>
+                        <div class="swiper-slide">   
+                            <a href="<?php echo base_url('visualiza'); ?>">                         
+                                <img src="<?php echo base_url('assets/img/slideshow/banner-visualiza-desktop.png');?>" class="d-none d-sm-block" alt="slide1">
+                                <img src="<?php echo base_url('assets/img/slideshow/banner-visualiza-mobile.png');?>" class="d-block d-sm-none" alt="slide1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- ./Swiper -->
                 <a href="#sc-first"><span class="icon-scroll"></span></a>
             </div>
         </div>
@@ -125,7 +169,8 @@
                         </div>
                         <div class="card-body p-0">
                             <h5 class="card-title">
-                                <?php echo $value->title; ?></h5>
+                                <?php echo $value->title; ?>
+                            </h5>
                             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>       -->
                             <a href="<?php echo base_url(); ?>blog/materia/<?php echo $value->id ?>/<?php echo $this->general->normalize_url($value->title); ?>"
                                 class="btn btn-link">Leia mais <i class="fas fa-caret-right"></i></a>
@@ -148,6 +193,28 @@
 
     <!-- JavaScript -->
     <?php $this->load->view('templates/scripts'); ?>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            /* cssMode: true, */
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: false,
+            keyboard: true,
+        });
+    </script>
 </body>
 
 </html>
