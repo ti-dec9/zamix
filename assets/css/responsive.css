@@ -7,55 +7,68 @@
     .m-align-center {
         text-align: center;
     }
+
     #sc-first p.m-align-center {
         text-align: left;
     }
+
     .circle {
         background-image: none;
     }
+
     .sc-default {
         min-height: initial;
     }
+
     .circle .about-shape .about-circle1,
     .circle .about-shape .about-circle2 {
         display: none;
     }
+
     .title-big-lighter {
         font-size: 40px;
         line-height: 50px;
     }
+
     .title-big {
         font-size: 35px;
         line-height: 40px;
     }
+
     .business {
         background: url('../img/background/4.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
+
     .sc-default .text-light.f-s-20 {
         padding-left: 250px;
         padding-right: 250px;
         font-size: 13px;
     }
+
     .col-plan-ultra {
         padding: 40px 40px;
     }
+
     .col-plan-ultra img.w-80 {
         width: 50%;
         height: auto;
     }
+
     .carousel-testimonials .item {
         padding-left: 200px;
         padding-right: 200px;
     }
+
     #navbarSupportedContent .navbar-nav li.cta-mobile a {
         display: block;
         color: #ff5400;
         padding-left: 20px;
         padding-top: 10px;
     }
+
     .logo-modal {
         width: 100%;
     }
@@ -78,44 +91,57 @@
         padding: 20px 10px;
         background: #fff;
     }
+
     #navbarSupportedContent .navbar-nav li a {
         color: #000;
     }
+
     .m-align-center {
         text-align: center;
     }
+
     #sc-first p.m-align-center {
         text-align: center !important;
     }
+
     .cta-mobile {
         display: block;
     }
+
     .img-responsive {
         width: 70%;
     }
+
     .carousel-testimonials .item {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .title-big-lighter,
     .title-big {
         text-align: center;
     }
+
     .list-store {
         text-align: center;
     }
+
     .btn-outline.white {
         display: none;
     }
+
     #frm-buy-plan .card.pl-4 {
         padding-left: initial !important;
     }
+
     .widget-more-views h5 {
         margin-top: 20px;
     }
+
     .widget-more-views p {
         text-align: left !important;
     }
+
     .sc-blog-detail p {
         text-align: left !important;
     }
@@ -137,68 +163,85 @@
     .m-align-center {
         text-align: center !important;
     }
+
     /* .slideshow {
         background: url('../img/slideshow/01-mobile.jpg') no-repeat scroll center 0/cover;
     } */
     #navbarSupportedContent {
         background: #fff;
     }
+
     #navbarSupportedContent .navbar-nav li a {
         color: #000;
     }
+
     /* p {
         text-align: center;
     } */
     .list-info-app {
         padding-left: 50px;
     }
+
     .title-big {
         font-size: 35px !important;
     }
+
     .title-big.f-s-40 {
         font-size: 30px !important;
     }
+
     .sc-plain .plan-display-outline svg {
         width: 275px;
     }
+
     .list-store {
         text-align: center;
     }
+
     .list-store .list-inline-item:not(:last-child) {
         margin-right: 0;
     }
+
     .sc-default .text-light.f-s-20 {
         padding-left: initial;
         padding-right: initial;
         font-size: 13px !important;
     }
+
     #sc-first {
         height: 100vh;
     }
+
     .btn-outline.white {
         display: none;
     }
+
     .cta-mobile {
         display: block;
     }
+
     .business {
         background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../img/background/4-mobile.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
+
     .sc-plan-details {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background/plan-details-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .sc-plain-detail-2 h5 {
         text-align: center;
     }
+
     .sc-velocity-header {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background/test-velocity.jpg') no-repeat scroll;
         background-position: 60% 20%;
     }
+
     .sc-link {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background/5.jpg');
         background-size: cover;
@@ -206,26 +249,32 @@
         background-repeat: no-repeat;
         min-height: 100vh;
     }
+
     .sc-benefits {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background/beneficios.jpg');
     }
+
     .sc-about-us {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background/about.jpg') no-repeat scroll;
         background-position: 70% 100%;
         height: 500px;
     }
+
     .sc-transparent {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background/bg-link.jpg') no-repeat scroll;
         background-position: 70% 10%;
         height: 500px;
     }
+
     .carousel-testimonials .item {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .img-responsive {
         width: 70%;
     }
+
     /* h4,
     .title-big-lighter,
     .title-big {
@@ -234,36 +283,46 @@
     h4.lbl-search-zamix {
         text-align: left;
     }
+
     #btn-plan-4 {
         margin-top: 40px;
     }
+
     #frm-solution-for-you .card .card-body {
         text-align: center;
     }
+
     #frm-solution-for-you .card.pl-4 {
         padding-left: initial !important;
     }
+
     .sc-blog-list .card .card-body .card-title a {
         font-size: 20px;
     }
+
     .sc-velocity .m-text-center {
         text-align: center;
     }
+
     .sc-velocity p,
     .sc-business p,
     .m-text-align-left,
     .m-text-align-left p {
         text-align: left;
     }
+
     #frm-buy-plan .card.pl-4 {
         padding-left: initial !important;
     }
+
     #popup-video {
         margin-bottom: 80px;
     }
+
     .footer p {
         text-align: left;
     }
+
     .testimonial4_slide img {
         width: 100%;
     }
@@ -292,11 +351,11 @@
 
     .visual-plan-change .img-cam-externa {
         width: 212px;
-        margin-left: 35px !important;
+        margin-left: 57px !important;
     }
 
     .visual-plan-change .title-big {
-        font-size: 1.8rem !important;
+        font-size: 1.5rem !important;
     }
 
     .sc-inovation .title-md {
@@ -319,5 +378,9 @@
 
     .sc-tech-cam .rw-padding {
         padding: 40px 40px;
+    }
+
+    .sc-cloud-cam {
+        text-align: center;
     }
 }

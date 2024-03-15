@@ -36,7 +36,7 @@
                         class="img-fluid" alt="cam zamix">
                 </div>
                 <div class="col-lg-7 pl-4 align-self-center">
-                    <h4 class="title-md color-orange">#InovaçãoLaranja <br></h4>
+                    <h4 class="title-md color-orange">InovaçãoLaranja <br></h4>
                     <h4 class="title-md color-black">em proteção</h4>
                     <div class="description">
                         <p class="color-black f-s-18">A Zamix leva até você o serviço de <br>
@@ -78,26 +78,25 @@
             <div class="row">
                 <div class="col-lg-6 bg-grayscale pr-md-5 rw-padding">
                     <h3 class="title-big color-black">
-                        Tecnologia para <br> <span class="color-orange">cuidar</span> do que é seu:
+                        Tecnologia para você <br> <span class="color-orange">cuidar</span> do que é seu:
                     </h3>
                     <br>
                     <ul class="list-unstyled color-black f-s-16">
                         <li><i class="fi fi-rr-checkbox"></i> Monitoramento 24h</li>
                         <li><i class="fi fi-rr-checkbox"></i> Imagens em alta definição</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Nitidez dia e 3noite</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Nitidez dia e noite</li>
                         <li><i class="fi fi-rr-checkbox"></i> Amplo campo de visão</li>
                         <li><i class="fi fi-rr-checkbox"></i> Flexibilidade de uso em diferentes espaços</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Instalação feita pela Zamix*</li>
-                        <li><i class="fi fi-rr-checkbox"></i> App VisualiZa</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Incluso cartão midro-SD 32GB</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Armazenamento em nuvem via Intelbras</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Multiarmazenamento</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Instalação feita pela Zamix</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 bg-orange rw-padding">
                     <div class="row h-100 align-self-center">
                         <div class="col-lg-12 pt-md-5 pl-5 pr-5">
                             <h4 class="text-center text-white">
-                                O <span class="font-weight-bolder">VizualiZa</span> é a solução ideal para <span class="font-weight-bolder">cuidar daquilo que você mais ama</span>
+                                O <span class="font-weight-bolder">VizualiZa</span> é a melhor solução para <span
+                                    class="font-weight-bolder">você cuidar daquilo que mais ama!</span>
                             </h4>
                         </div>
                         <div class="col-lg-12 mt-5">
@@ -136,7 +135,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center mb-5">
-                    <h4 class="title-big color-black">Escolha a <span class="color-orange">vizualização ideal</span>
+                    <h4 class="title-big color-black">Escolha a <span class="color-orange">visualização ideal</span>
                         <br> para o que você precisa proteger:
                     </h4>
                 </div>
@@ -150,7 +149,8 @@
                 </div>
                 <div class="col-md-12">
                     <p class="text-center mt-5">
-                        <a href="https://api.whatsapp.com/send?phone=552433450002" target="_blank" class="btn btn-black hvr-buzz-out mt-2" target="_blank">
+                        <a href="https://wa.me/552435122106" target="_blank" class="btn btn-black hvr-buzz-out mt-2"
+                            target="_blank">
                             Quero Contratar!
                         </a>
                     </p>
@@ -166,9 +166,9 @@
                     <h4 class="title-big color-black">
                         <span class="color-orange">Monitoramento</span> na <br> palma da sua mão
                     </h4>
-                    <p class="f-s-18 color-black">Com o <strong>App VizualiZa</strong>, você configura suas câmeras para
-                        ter <strong>acesso em tempo real</strong>, além de receber
-                        notificações sempre que houver movimentação na sua casa.</p>
+                    <p class="f-s-18 color-black">Com o <strong>App VisualiZa Zamix</strong>, você configura suas câmeras para
+                        ter <strong>acesso em tempo real</strong>, além de <strong>receber
+                        notificações</strong> sempre que houver movimentação na sua casa.</p>
                     <p class="title-big f-s-25 text-uppercase color-black">Baixe Agora!</p>
                     <ul class="list-inline list-store" style="margin-top: -50px;">
                         <li class="list-inline-item">
@@ -200,24 +200,40 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5 class="title-big color-black f-s-45">
-                        Guarde os momentos <br> <span class="color-orange">mais importantes</span>
+                    <span class="color-orange">Guarde os momentos</span> <br> mais importantes
                     </h5>
                     <p class="f-s-18 color-black">
-                        Tenha autonomia para definir como prefere armazenar suas imagens:
+                        Armazene suas imagens de forma prática e segura na nuvem, com funções exclusivas.
                     </p>
+                    <p class="f-s-18 font-weight-bold color-black">
+                        Plano 72h
+                    </p>
+                    <p class="title-big color-black">
+                        <span class="color-orange">R$ 19,90*</span>
+                    </p>
+                    <p class="">
+                        <a href="https://api.whatsapp.com/send?phone=552433450002" target="_blank" class="btn btn-black btn-custom hvr-buzz-out mt-2"
+                            target="_blank">
+                            Quero Contratar!
+                        </a>
+                    </p>
+
+                    <p>*Valor individual. É necessário contratar um plano para cada câmera alugada.</p>
                     <ul class="list-unstyled color-black f-s-16">
-                        <li><i class="fi fi-rr-checkbox"></i> Cartão micro-SD</li>
-                        <li><i class="fi fi-rr-checkbox"></i> DVR/NVR com tecnologia Onvif</li>
-                        <li><i class="fi fi-rr-checkbox"></i> Serviço de gravação em nuvem Mibo Cloud*</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Gravação em nuvem</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Gravações aceleradas em até 32x</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Gravações filtradas por tipo de evento</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Download em segundo plano dos vídeos gravados</li>
+                        <li><i class="fi fi-rr-checkbox"></i> Visualização dos eventos instantâneos</li>
                     </ul>
-                    <small>
+                    <!-- <small>
                         *O Mibo Cloud não faz parte das funcionalidades padrão do produto. O serviço está disponível
                         para aquisição extra via Intelbras. Consulte a Loja Intelbras para mais informações.
-                    </small>
+                    </small> -->
                 </div>
                 <div class="col-md-6 align-self-center">
                     <img src="<?php echo base_url('assets/img/cloud-visualiza.png'); ?>"
-                        class="w-img-cloud d-block mx-auto" alt="">
+                        class="w-img-cloud d-block mx-auto" alt="">                    
                 </div>
             </div>
         </div>

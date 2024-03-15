@@ -15,7 +15,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="<?php echo base_url('solucoes/para-voce') ?>">Para Você</a>
-                            <a class="dropdown-item" href="<?php echo base_url('solucolucoes/link-dedicado') ?>">Link Dedicado</a>
+                            <a class="dropdown-item" href="<?php echo base_url('solucoes/para-empresa') ?>">Para Empresa</a>
+                            <a class="dropdown-item" href="<?php echo base_url('solucoes/link-dedicado') ?>">Link Dedicado</a>
                             <a class="dropdown-item" href="<?php echo base_url('solucoes/beneficios') ?>">Benefícios</a>
                         </div>
                     </li>

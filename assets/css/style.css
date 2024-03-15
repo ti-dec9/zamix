@@ -1788,14 +1788,16 @@ opacity: 0;
     height: auto;
 }
 
-.visual-plan-change .btn {
+.visual-plan-change .btn,
+.sc-cloud-cam .btn {
     padding: 20px 30px 20px 30px;
     border-radius: 50px;
     font-weight: 800;
     font-size: 1.5rem;
 }
 
-.visual-plan-change .btn:hover {
+.visual-plan-change .btn:hover,
+.sc-cloud-cam .btn:hover {
     color: var(--primary-color);
     transition: .3s;
 }

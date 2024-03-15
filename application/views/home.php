@@ -52,12 +52,12 @@
                             <img src="<?php echo base_url('assets/img/slideshow/01.jpg');?>" class="d-none d-sm-block" alt="slide1">
                             <img src="<?php echo base_url('assets/img/slideshow/01-mobile.jpg');?>" class="d-block d-sm-none" alt="slide1">
                         </div>
-                        <div class="swiper-slide">   
+                        <!-- <div class="swiper-slide">   
                             <a href="<?php echo base_url('visualiza'); ?>">                         
                                 <img src="<?php echo base_url('assets/img/slideshow/banner-visualiza-desktop.png');?>" class="d-none d-sm-block" alt="slide1">
                                 <img src="<?php echo base_url('assets/img/slideshow/banner-visualiza-mobile.png');?>" class="d-block d-sm-none" alt="slide1">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
